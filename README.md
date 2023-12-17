@@ -13,7 +13,7 @@ This project was built using HTML, CSS and JS. Every time the user clicks on any
 ## Installing
 
 ```
-git clone https://github.com/NarekQolozyan/bouncing_balls
+git clone https://github.com/NarekQolozyan/bouncing_balls.git
 cd bouncing_balls
 npm install
 
