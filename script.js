@@ -24,10 +24,10 @@ function ballsColor(){
   }
 
   if(chosenBallColorOption === 'Random'){
-    chosenBallColorOption = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+    chosenBallColorOption = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
   }
 
-  return chosenBallColorOption
+  return chosenBallColorOption;
 }
 
 function ballsSize(){
@@ -74,21 +74,21 @@ function setChoice(event) {
       case "3 X 3":
         canvas.width = 300;
         canvas.height = 150;
-        canvas.style.margin = "0 19%"
+        canvas.style.margin = "0 19%";
         box.style.padding = "0 30%";
-        title.style.margin = "25px 9%"
+        title.style.margin = "25px 9%";
         break;
       case "4 X 4":
         canvas.width = 600;
         canvas.height = 300;
-        title.style.margin = "25px 9%"
+        title.style.margin = "25px 9%";
         box.style.padding = "0 30%";
         break;
       case "5 X 5":
         canvas.width = 900;
         canvas.height = 450;
         box.style.padding = "0 20%";
-        title.style.margin = "25px 22%"
+        title.style.margin = "25px 22%";
         break;
     }
 
@@ -150,11 +150,11 @@ function tick(currentTime) {
 
       }
       if(ball.x + ball.radius > canvas.width) {
-          ball.x = canvas.width - ball.radius
-          ball.xv *=-1
+          ball.x = canvas.width - ball.radius;
+          ball.xv *=-1;
       } else if(ball.x - ball.radius < 0){
-        ball.x += ball.radius
-        ball.xv *=-1
+        ball.x += ball.radius;
+        ball.xv *=-1;
       }
 
         for (let i = 0; i < balls.length; i++) {
