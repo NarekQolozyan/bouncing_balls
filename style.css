@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/bouncingBallImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gameBox{
+    width: 100%;
+    display: none;
+}
+.gameBox.active{
+    width: 100%;
+    display: block;
+}
+.canvas{
+    border: 1px solid #000;
+    background-color: bisque;
+    opacity: 0.9;
+}
+.choiceBox{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    padding: 20px;
+    display: block;
+}
+.choiceBox.active{
+     display: none;
+}
+h2{
+    margin: 10px 0 0 10px;
+}
+.choiceBox span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.confirmButton{
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+    margin: 20px 39%;
+    background-color: rgba(111, 111, 189, 0.763);
+    color: white;
+    cursor: pointer;
+}
